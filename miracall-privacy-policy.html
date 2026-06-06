@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="미라콜 앱의 개인정보처리방침입니다. 아침 알람, AI 아침 브리핑, 날씨·대기질 정보, BGM, 로컬 캐시와 관련한 개인정보 처리 내용을 안내합니다.">
+  <title>미라콜 개인정보처리방침</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1f2937;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --accent-soft: #fff3ea;
+      --bg: #fffdf9;
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+        "Noto Sans KR", "Malgun Gothic", sans-serif;
+      line-height: 1.72;
+      word-break: keep-all;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 36px 20px 72px;
+    }
+
+    header {
+      padding: 28px 0 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 42px 0 12px;
+      padding-top: 8px;
+      font-size: 1.35rem;
+      line-height: 1.35;
+      letter-spacing: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.05rem;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin: 8px 0 14px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    a {
+      color: #b84f16;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    table {
+      width: 100%;
+      margin: 14px 0 18px;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f9fafb;
+      font-weight: 800;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin-top: 18px;
+      font-size: 1.03rem;
+    }
+
+    .notice {
+      margin: 18px 0 4px;
+      padding: 14px 16px;
+      background: var(--accent-soft);
+      border: 1px solid #ffd8bf;
+      border-radius: 8px;
+    }
+
+    .toc {
+      margin: 24px 0 8px;
+      padding: 18px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.35rem;
+      columns: 2;
+      column-gap: 32px;
+    }
+
+    .toc li {
+      break-inside: avoid;
+      margin: 4px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        padding: 22px 14px 56px;
+      }
+
+      header {
+        padding-top: 16px;
+      }
+
+      .toc ol {
+        columns: 1;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      th,
+      td {
+        white-space: normal;
+        min-width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>미라콜 개인정보처리방침</h1>
+      <p class="meta">최종 업데이트일: 2026년 6월 6일 | 시행일: 2026년 6월 6일</p>
+      <p class="lead">
+        미라콜(이하 "앱")은 이용자의 개인정보를 최소한으로 처리하고,
+        관련 법령에 따라 개인정보 처리 내용을 투명하게 안내하기 위해 본 개인정보처리방침을 마련하였습니다.
+      </p>
+      <p class="lead">
+        본 방침은 미라콜 앱에서 제공하는 아침 알람, AI 아침 브리핑, 날씨·대기질·주요 이슈 브리핑,
+        BGM, 브리핑 다운로드·캐시, 설정 저장, 문의 처리 기능과 관련하여 앱이 처리하는 개인정보에 적용됩니다.
+      </p>
+      <div class="notice">
+        AI가 생성하는 브리핑은 참고용 정보입니다. 날씨, 대기질, 재난, 건강, 금융, 법률 등
+        중요한 판단이 필요한 정보는 공식 기관 또는 전문 출처를 함께 확인해야 합니다.
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="목차">
+      <strong>목차</strong>
+      <ol>
+        <li><a href="#controller">개인정보처리자 및 문의처</a></li>
+        <li><a href="#data">처리하는 개인정보</a></li>
+        <li><a href="#purpose">처리 목적</a></li>
+        <li><a href="#retention">보유 및 삭제</a></li>
+        <li><a href="#providers">외부 서비스 및 처리위탁</a></li>
+        <li><a href="#transfer">국외 처리 가능성</a></li>
+        <li><a href="#sharing">제3자 제공</a></li>
+        <li><a href="#rights">이용자 권리</a></li>
+        <li><a href="#security">안전성 확보 조치</a></li>
+        <li><a href="#children">아동의 개인정보</a></li>
+        <li><a href="#changes">방침 변경</a></li>
+        <li><a href="#contact">문의처</a></li>
+      </ol>
+    </nav>
+
+    <section id="controller">
+      <h2>1. 개인정보처리자 및 문의처</h2>
+      <ul>
+        <li>개발자/사업자명: Anfang</li>
+        <li>개인정보 문의 메일: <a href="mailto:anfang23@naver.com">anfang23@naver.com</a></li>
+        <li>앱명: 미라콜</li>
+        <li>앱 패키지: com.miracall.app</li>
+      </ul>
+    </section>
+
+    <section id="data">
+      <h2>2. 처리하는 개인정보</h2>
+      <p>앱은 서비스 제공에 필요한 범위에서 다음 정보를 처리할 수 있습니다.</p>
+
+      <h3>가. 기기 내부에 저장되는 정보</h3>
+      <ul>
+        <li>알람 설정: 알람 활성 여부, 알람 시각, 반복 요일, 알람 목록, 스누즈/알람 동작 관련 상태</li>
+        <li>앱 환경설정: 언어, 시간대, 테마, 브리핑 음성, 브리핑 길이, 테스트 모드, 권한 안내 상태</li>
+        <li>지역 설정: 선택한 지역 키/지역명 및 해당 지역 좌표</li>
+        <li>BGM 설정: BGM 사용 여부, 내장 BGM 선택값, 볼륨, 사용자가 선택한 기기 오디오 파일명 및 파일 URI</li>
+        <li>브리핑 캐시: 다운로드된 브리핑 오디오 파일, 날짜별 메타데이터, 파일 경로, 파일 크기, 다운로드 시각, 브리핑 제목 및 구성 정보</li>
+      </ul>
+      <p class="muted">
+        현재 앱은 GPS 위치 권한을 사용하지 않고, 앱에서 제공하는 지역 프리셋 또는 사용자가 선택한 지역 정보를 사용합니다.
+        사용자가 선택한 기기 오디오 파일 자체는 서버로 전송하지 않고 기기 내부에서만 사용합니다.
+      </p>
+
+      <h3>나. 서버로 전송되거나 저장될 수 있는 정보</h3>
+      <ul>
+        <li>브리핑·날씨 요청 정보: 날짜, 시간대, 언어, 지역 키, 위도/경도, 음성 설정, 브리핑 길이</li>
+        <li>브리핑 생성·조회 정보: 날짜, 지역, 언어, 음성, 브리핑 길이, 생성된 대본, 오디오 파일 경로, 파일 유형, 길이, 체크섬, AI 모델/제공자 메타데이터, 생성 상태, 오류 로그, 비용 추정 정보</li>
+        <li>날씨·대기질·이슈 조회 정보: 지역, 좌표, 날짜, 언어, 외부 호출 결과 및 처리 상태</li>
+        <li>서비스 보안과 장애 대응을 위한 요청 기록: 서버 또는 호스팅 제공자가 처리하는 IP 주소, User-Agent, 요청 시각, 오류 정보 등</li>
+      </ul>
+      <p class="muted">
+        현재 확인된 앱 화면에는 회원가입 또는 로그인 기능이 없지만, 백엔드에는 향후 계정 기반 설정 저장을 위한 구조가 포함될 수 있습니다.
+        계정 기능이 활성화되는 경우 사용자 식별자, 계정 관련 정보, 사용자 설정값 처리 내용이 본 방침에 반영됩니다.
+      </p>
+
+      <h3>다. 이용자가 선택적으로 제공하는 정보</h3>
+      <ul>
+        <li>문의 메일을 보내는 경우 이메일 주소, 문의 내용, 첨부한 정보</li>
+        <li>사용자가 직접 선택한 기기 오디오 파일명/URI 등 BGM 선택 관련 정보</li>
+      </ul>
+
+      <h3>라. 앱 권한</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>권한</th>
+            <th>사용 목적</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>INTERNET</td><td>브리핑, 날씨, 대기질, 이슈 정보 요청 및 오디오 다운로드</td></tr>
+          <tr><td>ACCESS_NETWORK_STATE</td><td>네트워크 연결 상태 확인</td></tr>
+          <tr><td>POST_NOTIFICATIONS</td><td>알람 및 알람 재생 관련 알림 표시</td></tr>
+          <tr><td>SCHEDULE_EXACT_ALARM</td><td>지정한 시각에 알람 실행</td></tr>
+          <tr><td>RECEIVE_BOOT_COMPLETED</td><td>기기 재부팅 후 알람 재등록</td></tr>
+          <tr><td>FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>알람 및 오디오 재생 서비스 유지</td></tr>
+          <tr><td>USE_FULL_SCREEN_INTENT</td><td>잠금화면 또는 전체화면 알람 표시</td></tr>
+          <tr><td>WAKE_LOCK</td><td>알람 재생 중 기기 절전으로 인한 중단 방지</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">현재 확인된 Android 앱 기준 위치, 마이크, 카메라 권한은 선언되어 있지 않습니다.</p>
+    </section>
+
+    <section id="purpose">
+      <h2>3. 개인정보의 처리 목적</h2>
+      <ul>
+        <li>이용자가 설정한 시각과 요일에 알람 제공</li>
+        <li>알람음, BGM, 브리핑 음성 등 맞춤형 알람 경험 제공</li>
+        <li>선택한 지역에 맞는 날씨, 대기질, 주요 이슈, 격려 문구를 포함한 아침 브리핑 제공</li>
+        <li>브리핑 오디오 사전 생성, 다운로드, 캐시, 재생</li>
+        <li>앱 설정 저장 및 이용 편의 제공</li>
+        <li>서비스 안정성 확보, 장애 대응, 오류 원인 분석, 부정 이용 방지, 보안 관리</li>
+        <li>외부 제공자 비용 및 생성 상태 관리</li>
+        <li>이용자 문의 응대</li>
+      </ul>
+    </section>
+
+    <section id="retention">
+      <h2>4. 개인정보의 처리 및 보유 기간</h2>
+      <p>앱은 처리 목적 달성에 필요한 기간 동안 정보를 보유하며, 목적이 달성되면 지체 없이 삭제하거나 복구가 어렵도록 처리합니다.</p>
+      <ul>
+        <li>기기 내부 알람·설정값: 이용자가 앱에서 변경/삭제하거나 앱 데이터를 삭제할 때까지 보관</li>
+        <li>기기 내부 브리핑 캐시: 오래된 캐시는 7일 기준으로 자동 정리될 수 있으며, 당일 브리핑 캐시는 재생 안정성을 위해 보존될 수 있음</li>
+        <li>BGM 파일 URI/파일명: 이용자가 BGM 설정을 변경하거나 앱 데이터를 삭제할 때까지 기기 내부에 보관</li>
+        <li>오디오 signed URL: 발급 후 약 3600초 동안 유효</li>
+        <li>서버의 날짜별 브리핑팩, 생성 로그, 이슈 스냅샷, 오류 로그: 서비스 운영, 장애 대응, 비용 관리, 품질 개선에 필요한 기간 동안 보관 후 운영 정책에 따라 삭제 또는 비식별 처리</li>
+        <li>문의 내역: 문의 처리와 분쟁 대응에 필요한 기간 동안 보관 후 삭제</li>
+      </ul>
+      <p>앱 삭제 또는 기기 변경만으로 서버에 이미 저장된 정보나 이메일 문의 내역이 자동 삭제되지 않을 수 있습니다. 서버 데이터 삭제가 필요한 경우 개인정보 문의처로 요청할 수 있습니다.</p>
+    </section>
+
+    <section id="providers">
+      <h2>5. 외부 서비스 이용 및 처리위탁</h2>
+      <p>앱은 서비스 제공을 위해 다음 외부 서비스를 사용할 수 있습니다. 앱은 이용자의 개인정보를 판매하지 않으며, 현재 확인된 앱 기준 광고 목적의 제3자 제공을 하지 않습니다.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>외부 서비스</th>
+            <th>이용 목적</th>
+            <th>처리될 수 있는 정보</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Supabase</td><td>Edge Functions, 데이터베이스, 스토리지, signed URL, 인증 기능 가능성</td><td>날짜, 시간대, 언어, 지역 키, 좌표, 음성/길이 설정, 브리핑 대본/오디오 메타데이터, 사용자 설정 가능성</td></tr>
+          <tr><td>Google Vertex AI / Gemini / Google AI 계열</td><td>브리핑 대본 생성, 음성 생성, AI 처리 보조</td><td>날짜, 지역, 날씨·대기질·이슈 정보, 브리핑 생성을 위한 프롬프트/대본</td></tr>
+          <tr><td>기상청 등 날씨 제공자</td><td>날씨 정보 조회</td><td>지역/좌표, 날짜, 날씨 요청 정보</td></tr>
+          <tr><td>AirKorea 등 대기질 제공자</td><td>대기질 정보 조회</td><td>지역/좌표, 날짜, 대기질 요청 정보</td></tr>
+          <tr><td>뉴스/이슈 제공자</td><td>주요 이슈 브리핑 구성</td><td>일반 뉴스/이슈 정보, 지역/날짜 맥락</td></tr>
+          <tr><td>GitHub Pages</td><td>개인정보처리방침 페이지 공개 호스팅</td><td>정책 페이지 방문자의 IP 주소가 GitHub 보안 목적상 기록될 수 있음</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">광고 SDK, 분석 SDK, 오류 수집 SDK, 푸시 알림 SDK, 결제 SDK, 소셜 로그인 등이 추가되는 경우, 해당 서비스와 처리 정보를 본 방침에 반영한 뒤 배포합니다.</p>
+    </section>
+
+    <section id="transfer">
+      <h2>6. 국외 처리 가능성</h2>
+      <p>
+        앱이 사용하는 Supabase, Google, GitHub 등 글로벌 인프라 제공자의 서버는 대한민국 외 지역에 위치할 수 있습니다.
+        국외 처리 세부 사항은 실제 운영 리전과 각 제공자의 정책에 따라 달라질 수 있으며,
+        이용자는 문의처를 통해 관련 내용을 확인하거나 삭제를 요청할 수 있습니다.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>업체</th>
+            <th>이전/처리 국가</th>
+            <th>처리 목적</th>
+            <th>처리 정보</th>
+            <th>보유·이용 기간</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Supabase</td><td>Supabase가 운영하는 글로벌 인프라 소재 국가</td><td>백엔드, DB, 스토리지</td><td>브리핑 요청/생성 정보, 사용자 설정 가능성</td><td>서비스 운영에 필요한 기간 또는 제공자 정책에 따름</td></tr>
+          <tr><td>Google Cloud / Google AI</td><td>Google이 운영하는 글로벌 인프라 소재 국가</td><td>AI 대본/음성 처리</td><td>브리핑 생성에 필요한 지역·날씨·이슈 맥락</td><td>서비스 운영에 필요한 기간 또는 제공자 정책에 따름</td></tr>
+          <tr><td>GitHub</td><td>GitHub가 운영하는 글로벌 인프라 소재 국가</td><td>정책 페이지 호스팅</td><td>정책 페이지 방문 IP 등 보안 로그</td><td>GitHub 정책에 따름</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="sharing">
+      <h2>7. 개인정보의 제3자 제공</h2>
+      <p>앱은 이용자의 개인정보를 판매하지 않으며, 광고 목적의 제3자 제공을 하지 않습니다. 다만 서비스 제공에 필요한 범위에서 외부 인프라 및 처리위탁 업체를 사용할 수 있고, 법령상 의무 이행, 수사기관의 적법한 요청, 이용자 동의가 있는 경우 필요한 범위에서 정보를 제공할 수 있습니다.</p>
+    </section>
+
+    <section id="rights">
+      <h2>8. 이용자의 권리와 행사 방법</h2>
+      <p>이용자는 자신의 개인정보에 대해 열람, 정정, 삭제, 처리정지를 요청할 수 있습니다.</p>
+      <h3>앱 내에서 직접 가능한 항목</h3>
+      <ul>
+        <li>알람 설정 변경 또는 삭제</li>
+        <li>지역, 음성, 브리핑 길이, 테마, BGM 설정 변경</li>
+        <li>기기 설정에서 알림 권한 변경</li>
+        <li>앱 데이터 삭제 또는 앱 삭제를 통한 기기 내부 저장 정보 삭제</li>
+      </ul>
+      <h3>문의처를 통해 요청해야 하는 항목</h3>
+      <ul>
+        <li>서버에 저장된 브리핑 요청/설정 정보 삭제 요청</li>
+        <li>계정 기능이 활성화된 경우 계정 및 계정 연결 데이터 삭제 요청</li>
+        <li>문의 내역 삭제 요청</li>
+        <li>기타 개인정보 관련 권리 행사</li>
+      </ul>
+      <p>요청 처리 과정에서 본인 확인이 필요할 수 있으며, 법령상 보관 의무가 있는 정보는 해당 기간 동안 보관될 수 있습니다.</p>
+    </section>
+
+    <section id="security">
+      <h2>9. 개인정보의 안전성 확보 조치</h2>
+      <ul>
+        <li>필요한 정보만 처리하는 최소 수집 원칙 적용</li>
+        <li>앱 권한 최소화</li>
+        <li>전송 구간 보호(HTTPS 등)</li>
+        <li>비공개 스토리지와 signed URL 사용</li>
+        <li>서버 접근 권한 분리 및 비밀키 클라이언트 미포함</li>
+        <li>데이터베이스 접근 통제 및 권한 정책 적용</li>
+        <li>기기 내부 저장소와 캐시 정리 정책 사용</li>
+        <li>오류 로그와 운영 로그에서 불필요한 개인정보를 줄이기 위한 점검</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2>10. 아동의 개인정보</h2>
+      <p>미라콜은 만 14세 미만 아동을 주요 이용 대상으로 설계된 서비스가 아닙니다. 법정대리인 동의 없이 아동의 개인정보를 수집한 사실을 알게 되는 경우 지체 없이 필요한 조치를 취합니다.</p>
+    </section>
+
+    <section id="changes">
+      <h2>11. 개인정보처리방침의 변경</h2>
+      <p>본 개인정보처리방침은 관련 법령, 앱 기능, 외부 서비스, 운영 방식 변경에 따라 수정될 수 있습니다. 중요한 변경이 있는 경우 앱 내 설정 화면, 공지, 또는 공개된 정책 페이지를 통해 안내할 수 있습니다.</p>
+    </section>
+
+    <section id="contact">
+      <h2>12. 문의처</h2>
+      <ul>
+        <li>개발자/사업자명: Anfang</li>
+        <li>개인정보 문의 메일: <a href="mailto:anfang23@naver.com">anfang23@naver.com</a></li>
+        <li>정책 페이지 URL: <a href="https://anfang0.github.io/miracall-privacy-policy.html">https://anfang0.github.io/miracall-privacy-policy.html</a></li>
+      </ul>
+    </section>
+
+    <p class="footer">
+      본 방침은 2026년 6월 6일 기준 미라콜 앱 코드와 운영 문서를 바탕으로 작성되었습니다.
+      위치, 마이크, 카메라, 광고, 분석, 오류 수집, 계정 기능 등이 추가되는 경우 본 방침과 스토어 개인정보 입력 항목을 함께 갱신합니다.
+    </p>
+  </main>
+</body>
+</html>
